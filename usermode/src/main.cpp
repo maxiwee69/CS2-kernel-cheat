@@ -15,7 +15,7 @@
 namespace fs = std::filesystem;
 
 std::vector<sf::Int16>& getRandomSoundFile() {
-    std::vector<std::vector<sf::Int16>*> sound_files = { &audioData1, &audioData2, &audioData3, &audioData4, &audioData5 };
+    std::vector<std::vector<sf::Int16>*> sound_files = { &audioData1, &audioData2, &audioData4, &audioData5 };
 
     std::random_device rd;
     std::mt19937 gen(rd());
@@ -158,7 +158,7 @@ namespace driver {
     }
 }
 
-
+int random_duration = rand() % 201;
 
 static int counter = 0;
 
