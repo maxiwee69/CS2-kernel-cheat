@@ -14,7 +14,9 @@ A simple CS2 cheat in using a kernel driver
 
 ## Compiling
 
-Open it in visual studio and build as debug or as release whatever you like
+Open it in visual studio and build as debug or as release whatever you like 
+
+You will also need the sfml libraries for this to compile and run
 ## How to use it
 
 You need to map the driver using soemthing like [KDmapper](https://github.com/TheCruZ/kdmapper) 
