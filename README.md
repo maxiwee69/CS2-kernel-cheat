@@ -29,6 +29,11 @@ Disable vulnerable driver list if enabled [Guide for that](https://support.micro
 ## Note
 
 I know this is horrible code and also horribly formatted because most is done in 1 file i am sorry for that.
+
+## Future plans
+- Currently the bhop isnt the best as it sometimes just fails to jump so i will improve that.
+- I am also trying to get a simple aimbot but i cant really get it to work 
+
 ## Updating
 
 I cant guarentee that i will update this for every CS2 update so you can update the offsets yourself using [Cs-Dumper](https://github.com/a2x/cs2-dumper) and then just replace your current client.dll.hpp with the one by cs2-dumper and do the same for offsets.hpp
