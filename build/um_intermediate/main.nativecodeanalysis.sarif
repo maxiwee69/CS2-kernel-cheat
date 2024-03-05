@@ -1,0 +1,403 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.39.33520.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///c:/users/maxi/source/repos/driver/usermode/src/main.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "5c49227aed2278de4e9783cd3d604cf7197b1bbdf8b4bff6333329d37fef369b"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/maxi/source/repos/driver/usermode/src/client.dll.hpp"
+          },
+          "hashes": {
+            "sha-256": "1a445cbe542287585f6a18aea2b0722ece938535b30976f1da416576ea33f325"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/maxi/source/repos/driver/usermode/src/offsets.hpp"
+          },
+          "hashes": {
+            "sha-256": "a0353bc9fbcb02e9a72d4346f3715a5b3b7eed6beaa4e373b3edfdd890d419cb"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/maxi/source/repos/driver/usermode/src/sounds.h"
+          },
+          "hashes": {
+            "sha-256": "6649149aab18ebdb50dff05236b54d8b3ca8dc791164dbec1d2b6334d114bfb9"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/maxi/fullscreen/sfml-2.6.1/include/sfml/audio.hpp"
+          },
+          "hashes": {
+            "sha-256": "f226dcbcd18e03ed4ea7f2d7f0a838bd3af7f31c7d886e405785d9f2cea4fae6"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/maxi/fullscreen/sfml-2.6.1/include/sfml/system.hpp"
+          },
+          "hashes": {
+            "sha-256": "09bc2b32d9221b5b416725603a01a655299d568ed8e524ad0cdd501d6f70d7ba"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/maxi/fullscreen/sfml-2.6.1/include/sfml/config.hpp"
+          },
+          "hashes": {
+            "sha-256": "b6e069f711f071ca13e2c29f968b76c1d8821c861450ad3840964f8678942c03"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/maxi/fullscreen/sfml-2.6.1/include/sfml/system/clock.hpp"
+          },
+          "hashes": {
+            "sha-256": "abc79599d3723af2fd8c60023fe066fa2bbd3263bf801b0fb5f2b345c3adb4e1"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/maxi/fullscreen/sfml-2.6.1/include/sfml/system/export.hpp"
+          },
+          "hashes": {
+            "sha-256": "ae00bbdb837d29dca4d82d897fd57300e7542b19ac7d94b33e842aad64c5e07a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/maxi/fullscreen/sfml-2.6.1/include/sfml/system/time.hpp"
+          },
+          "hashes": {
+            "sha-256": "b3705be72704b27b90ced1425d8555a1088ee51ba017d1588a7d57099d2953e6"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/maxi/fullscreen/sfml-2.6.1/include/sfml/system/err.hpp"
+          },
+          "hashes": {
+            "sha-256": "d1a867501781a36e3a58c89bb9aae6ab98f0a17a733f90827054fe886563a7fe"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/maxi/fullscreen/sfml-2.6.1/include/sfml/system/fileinputstream.hpp"
+          },
+          "hashes": {
+            "sha-256": "d0a5b82d07437e357ec4942937abeca5089df446dfa2c24378982aba6ac22088"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/maxi/fullscreen/sfml-2.6.1/include/sfml/system/inputstream.hpp"
+          },
+          "hashes": {
+            "sha-256": "262325203eb98a90eb9ccef604034eae7db71bc9647392ac508b43da1a028220"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/maxi/fullscreen/sfml-2.6.1/include/sfml/system/noncopyable.hpp"
+          },
+          "hashes": {
+            "sha-256": "d08bbf1f7018134c2784bc95e133f68d0646d3bce194046bb0db9e02c97b357c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/maxi/fullscreen/sfml-2.6.1/include/sfml/system/lock.hpp"
+          },
+          "hashes": {
+            "sha-256": "53344c87f4b2e23dac2e18724edeff4d57aa15504bc2b16886f2f3655209629b"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/maxi/fullscreen/sfml-2.6.1/include/sfml/system/memoryinputstream.hpp"
+          },
+          "hashes": {
+            "sha-256": "65523608563a536bbc4bb267812974784082ccab6a2e6f095a63d60210e78976"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/maxi/fullscreen/sfml-2.6.1/include/sfml/system/mutex.hpp"
+          },
+          "hashes": {
+            "sha-256": "2402729f5756b7c9ea0616cec03862e0e7689b7cc8c33894a574466a9a0c4825"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/maxi/fullscreen/sfml-2.6.1/include/sfml/system/sleep.hpp"
+          },
+          "hashes": {
+            "sha-256": "f983a0269b5cfa423a9c4434025fd01caa6d793dffaf780a598ed2fa469b7672"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/maxi/fullscreen/sfml-2.6.1/include/sfml/system/string.hpp"
+          },
+          "hashes": {
+            "sha-256": "5ef3415df60dafd46ddfa5ba57a0b6d7331a643986b6875761d9846437dca2c9"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/maxi/fullscreen/sfml-2.6.1/include/sfml/system/utf.hpp"
+          },
+          "hashes": {
+            "sha-256": "63c11bca4545fd490b2788421623ac87c1cda76d2f40726e495efce89db4332d"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/maxi/fullscreen/sfml-2.6.1/include/sfml/system/utf.inl"
+          },
+          "hashes": {
+            "sha-256": "577ed3b6eea533f1d2fd767cf8b52ca49f9fd04b2f4e2c10123789011f4dd7e5"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/maxi/fullscreen/sfml-2.6.1/include/sfml/system/string.inl"
+          },
+          "hashes": {
+            "sha-256": "7c1349a61ced7e8bf3d1ed5cd8583709e93d6277608f5f8f3a602a291d02d836"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/maxi/fullscreen/sfml-2.6.1/include/sfml/system/thread.hpp"
+          },
+          "hashes": {
+            "sha-256": "82e34053cfba9d4e606f46fab89a4cc02a5770490f8054aac6c2a71aca4831cf"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/maxi/fullscreen/sfml-2.6.1/include/sfml/system/thread.inl"
+          },
+          "hashes": {
+            "sha-256": "7abbcc73bb4635e3e9953aec5718e9b3570bdaba61788aa8522615c7e440f2e8"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/maxi/fullscreen/sfml-2.6.1/include/sfml/system/threadlocal.hpp"
+          },
+          "hashes": {
+            "sha-256": "b0f772c1c1678e14617d91178137d68c57fbcd2c2dc6e56a366aaf254451cf6e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/maxi/fullscreen/sfml-2.6.1/include/sfml/system/threadlocalptr.hpp"
+          },
+          "hashes": {
+            "sha-256": "68b25d6f888ec2e69a1a19b426eb9f633e32ab2d41b7e17bebfa5d2d2b1a6c6a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/maxi/fullscreen/sfml-2.6.1/include/sfml/system/threadlocalptr.inl"
+          },
+          "hashes": {
+            "sha-256": "cd25f6d487246ff7fdb2df5401ccc951bc632b639c02c744cd42550751e5055a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/maxi/fullscreen/sfml-2.6.1/include/sfml/system/vector2.hpp"
+          },
+          "hashes": {
+            "sha-256": "3271f8eaac3f1d262878fbb14cdd4dbeb1cd329b80577515513f4f7c45c05fb2"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/maxi/fullscreen/sfml-2.6.1/include/sfml/system/vector2.inl"
+          },
+          "hashes": {
+            "sha-256": "70d8e5ca6dc3aa99b92533bc231e3d556c953b4fba2c0ae064b5b8454ff838d9"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/maxi/fullscreen/sfml-2.6.1/include/sfml/system/vector3.hpp"
+          },
+          "hashes": {
+            "sha-256": "1d12bd3444004080569b91293923848c8ce8feb8f31cf16f81ba9067cff023de"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/maxi/fullscreen/sfml-2.6.1/include/sfml/system/vector3.inl"
+          },
+          "hashes": {
+            "sha-256": "7b9be1d5967cce700b29d1a61905e2493a1b3b126bf7b8c7f88c5391059bc052"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/maxi/fullscreen/sfml-2.6.1/include/sfml/audio/inputsoundfile.hpp"
+          },
+          "hashes": {
+            "sha-256": "b44cbcce053945f847cc974c23efaa0ca27f459614be3c3dba0e3c73fd8dede2"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/maxi/fullscreen/sfml-2.6.1/include/sfml/audio/export.hpp"
+          },
+          "hashes": {
+            "sha-256": "7085515b6e7bef9e5a12904c13943197c463b56b8005ca4d92d5b2918cdd4ec9"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/maxi/fullscreen/sfml-2.6.1/include/sfml/audio/listener.hpp"
+          },
+          "hashes": {
+            "sha-256": "7f7aacea3dca86b9d5bcd398f2e53fb6d614fc847a3f1e156c06379db0c7ba24"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/maxi/fullscreen/sfml-2.6.1/include/sfml/audio/music.hpp"
+          },
+          "hashes": {
+            "sha-256": "b400e95de37aeedbc83e317dee0eafef5ea8335d327d6bedfa21a1756b343ce8"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/maxi/fullscreen/sfml-2.6.1/include/sfml/audio/soundstream.hpp"
+          },
+          "hashes": {
+            "sha-256": "c5be81aaa2909ab11c21d241f454f6c5874310e6b8b90896cc4e7b61e33c9fb6"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/maxi/fullscreen/sfml-2.6.1/include/sfml/audio/soundsource.hpp"
+          },
+          "hashes": {
+            "sha-256": "b211f8aa89787c463f4153c5e662b806fbf55a2fe95af741c1243b424e23436a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/maxi/fullscreen/sfml-2.6.1/include/sfml/audio/alresource.hpp"
+          },
+          "hashes": {
+            "sha-256": "8c0dd48808023e93a81fb05cb9fbaa3767c21e63ddcd181b3a727ad5512838e9"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/maxi/fullscreen/sfml-2.6.1/include/sfml/audio/outputsoundfile.hpp"
+          },
+          "hashes": {
+            "sha-256": "9f857c9b44f980afb91941977bf408d8ceb8c86a3466358f5ca5e6f04a038c81"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/maxi/fullscreen/sfml-2.6.1/include/sfml/audio/sound.hpp"
+          },
+          "hashes": {
+            "sha-256": "70b04437cee74ced1468036f07c394f8b6451fd82216f237be406e8894b86efb"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/maxi/fullscreen/sfml-2.6.1/include/sfml/audio/soundbuffer.hpp"
+          },
+          "hashes": {
+            "sha-256": "06f1673a871f488456cb93fd6a46d798251c7f1c86a8aa39b98d7568ece298ee"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/maxi/fullscreen/sfml-2.6.1/include/sfml/audio/soundbufferrecorder.hpp"
+          },
+          "hashes": {
+            "sha-256": "83e7b72f22639733f721f7e781e4557a938fadccf439f9440a376995de4f1cd4"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/maxi/fullscreen/sfml-2.6.1/include/sfml/audio/soundrecorder.hpp"
+          },
+          "hashes": {
+            "sha-256": "54b213cf76b1408e1b68f4b1d715fedfc0d9feaf5742c44a77f56e5987f6301f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/maxi/fullscreen/sfml-2.6.1/include/sfml/audio/soundfilefactory.hpp"
+          },
+          "hashes": {
+            "sha-256": "3d1d3babc45983945d6f9f3be648daac3adefa2d6bd4eadbcf3de1251f421976"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/maxi/fullscreen/sfml-2.6.1/include/sfml/audio/soundfilefactory.inl"
+          },
+          "hashes": {
+            "sha-256": "723c07bc6c0a84144ec505c506967515e295cffae69abc43c4911db29f13edb8"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/maxi/fullscreen/sfml-2.6.1/include/sfml/audio/soundfilereader.hpp"
+          },
+          "hashes": {
+            "sha-256": "d56fe1ab7ea8ba8a9bff604a0e7b8f4a29e32b0fd966b6616a86d19a3772cd0c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/maxi/fullscreen/sfml-2.6.1/include/sfml/audio/soundfilewriter.hpp"
+          },
+          "hashes": {
+            "sha-256": "4637b2683687543121be1536f349ab844e89b34c336bbd356f40ba48ff6db967"
+          }
+        }
+      ]
+    }
+  ]
+}

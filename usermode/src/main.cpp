@@ -5,6 +5,10 @@
 #include <thread>
 #include <filesystem>
 #include <random>
+#include <cmath>
+#include <atomic>
+#include <future>
+#include <vector>
 #include "client.dll.hpp"
 #include "offsets.hpp"
 #include "sounds.h"
@@ -13,6 +17,7 @@
 
 
 namespace fs = std::filesystem;
+
 
 std::vector<sf::Int16>& getRandomSoundFile() {
     std::vector<std::vector<sf::Int16>*> sound_files = { &audioData1, &audioData2, &audioData4, &audioData5 };
@@ -160,7 +165,14 @@ namespace driver {
 
 int random_duration = rand() % 201;
 
-static int counter = 0;
+std::atomic<int> counter(0);
+
+struct Vector3 {
+    float x, y, z;
+};
+
+constexpr int JUMP_FORCE_ON_GROUND = 256;
+constexpr int JUMP_FORCE_IN_AIR = 65537;
 
 int main() {
     const DWORD pid = get_process_id(L"cs2.exe");
@@ -185,9 +197,9 @@ int main() {
         if (const std::uintptr_t client = get_module_base(pid, L"client.dll"); client != 0) {
             std::cout << "Client found.\n";
 
-            int previousTotalHits = 0;
+            std::atomic<int> previousTotalHits(0);
 
-            std::thread bhopThread([&]() {
+            auto bhopFuture = std::async(std::launch::async, [&]() {
                 while (true) {
                     if (GetAsyncKeyState(VK_END))
                         break;
@@ -219,7 +231,7 @@ int main() {
                 }
                 });
 
-            std::thread hitsoundThread([&]() {
+            auto hitsoundFuture = std::async(std::launch::async, [&]() {
                 while (true) {
                     if (GetAsyncKeyState(VK_END))
                         break;
@@ -229,7 +241,6 @@ int main() {
 
                     if (local_player_pawn == 0)
                         continue;
-
                     uintptr_t pBulletServices = driver::read_memory<uintptr_t>(driver, static_cast<std::uintptr_t>(local_player_pawn) + 0x1718);
                     int totalHits = driver::read_memory<int>(driver, static_cast<std::uintptr_t>(pBulletServices) + 0x40);
 
@@ -240,7 +251,6 @@ int main() {
                         else {
                             // Play the hitsound
                             playSound(getRandomSoundFile());
-                            std::cout << "Played sound\n";  // Print message to console
                         }
 
                         previousTotalHits = totalHits; // Update the previousTotalHits
@@ -248,7 +258,7 @@ int main() {
                 }
                 });
 
-            std::thread triggerbotThread([&]() {
+            auto triggerbotFuture = std::async(std::launch::async, [&]() {
                 while (true) {
                     if (GetAsyncKeyState(VK_END))
                         break;
@@ -279,22 +289,24 @@ int main() {
                                 mouse_event(MOUSEEVENTF_LEFTDOWN, 0, 0, 0, 0);
                                 std::this_thread::sleep_for(std::chrono::milliseconds(random_duration2));
                                 mouse_event(MOUSEEVENTF_LEFTUP, 0, 0, 0, 0);
-
-                                std::cout << "Waited " << random_duration + random_duration1 + random_duration2 << " milliseconds before firing\n";
                             }
                         }
-
-                        std::this_thread::sleep_for(std::chrono::milliseconds(0));
-                    }
-                    else {
-                        std::this_thread::sleep_for(std::chrono::milliseconds(00));
                     }
                 }
                 });
 
-            triggerbotThread.join();
-            hitsoundThread.join();
-            bhopThread.join();
+            auto rcsFuture = std::async(std::launch::async, [&]() {
+                while (true) {
+					if (GetAsyncKeyState(VK_END))
+						break;
+
+
+				}
+				}); 
+            
+            triggerbotFuture.get();
+            hitsoundFuture.get();
+            bhopFuture.get();
         }
     }
 
@@ -304,3 +316,8 @@ int main() {
 
     return 0;
 }
+
+
+
+
+
