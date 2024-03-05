@@ -34,14 +34,12 @@ I know this is horrible code and also horribly formatted because most is done in
 I cant guarentee that i will update this for every CS2 update so you can update the offsets yourself using [Cs-Dumper](https://github.com/a2x/cs2-dumper) and then just replace your current client.dll.hpp with the one by cs2-dumper and do the same for offsets.hpp
 ## Authors
 - [@maxiwee69](https://www.github.com/maxiwee69)
-- [@cazzwastaken](https://www.github.com/cazzwastaken) made the driver and the the way the usermode communicates with the driver
+- [@cazzwastaken](https://www.github.com/cazzwastaken) made the driver and the the way the usermode communicates with the driver + he made the bhop
 
 
 ## Contributing
 
-Contributions are always welcome!
-
-via a pull request
+Contributions are always welcome via a pull request!
 
 
 ## License
