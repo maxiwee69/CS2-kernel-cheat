@@ -39,10 +39,11 @@ void playSound(const std::vector<sf::Int16>& soundData) {
     sound.setBuffer(buffer);
     sound.play();
 
-    // Wait for the sound to finish playing
+    /*
     while (sound.getStatus() == sf::Sound::Playing) {
         sf::sleep(sf::milliseconds(100));
     }
+    */
 }
 
 static DWORD get_process_id(const wchar_t* process_name) {
@@ -281,6 +282,11 @@ int main() {
                             int team = driver::read_memory<int>(driver, entity + C_BaseEntity::m_iTeamNum);
                             int health = driver::read_memory<int>(driver, entity + C_BaseEntity::m_iHealth);
                             if (health > 0 && team != local_team) {
+                                char keys[] = { 'W', 'A', 'S', 'D' };
+                                for (char key : keys) {
+                                    keybd_event(VkKeyScan(key), 0, 0, 0);   
+                                    keybd_event(VkKeyScan(key), 0, KEYEVENTF_KEYUP, 0);  
+                                }
                                 int random_duration1 = rand() % 30 + 10;
                                 int random_duration2 = rand() % 40 + 10;
 
@@ -293,17 +299,8 @@ int main() {
                         }
                     }
                 }
-                });
+            });
 
-            auto rcsFuture = std::async(std::launch::async, [&]() {
-                while (true) {
-					if (GetAsyncKeyState(VK_END))
-						break;
-
-
-				}
-				}); 
-            
             triggerbotFuture.get();
             hitsoundFuture.get();
             bhopFuture.get();
