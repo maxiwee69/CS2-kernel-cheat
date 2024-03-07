@@ -14,7 +14,7 @@ A simple CS2 cheat in using a kernel driver
 
 ## Compiling
 
-Open it in visual studio and build as debug or as release whatever you like 
+Open it in visual studio and build as debug or as release whatever you like obv in x64
 
 You will also need the sfml libraries for this to compile and run
 ## How to use it
