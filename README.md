@@ -32,7 +32,7 @@ I know this is horrible code and also horribly formatted because most is done in
 
 ## Future plans
 - Currently the bhop isnt the best as it sometimes just fails to jump so i will improve that.
-- I am also trying to get a simple aimbot but i cant really get it to work 
+- I am also trying to get add a precision enhanced automatic target acquisition and engagement facilitation system protocol but i cant really get it to work 
 
 ## Updating
 
