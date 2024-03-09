@@ -6,7 +6,7 @@ A simple CS2 cheat in using a kernel driver
 
 ## Features
 
-- Simple triggerbot with autostop
+- Simple triggerbot with autostop(you need to uncomment it at line 285 in the usermode/src/main.cpp)
 - Simple bhop 
 - Hitsounds
 - Kernelmode to be undetectable by vac
