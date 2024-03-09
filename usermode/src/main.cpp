@@ -282,11 +282,13 @@ int main() {
                             int team = driver::read_memory<int>(driver, entity + C_BaseEntity::m_iTeamNum);
                             int health = driver::read_memory<int>(driver, entity + C_BaseEntity::m_iHealth);
                             if (health > 0 && team != local_team) {
+                                /* idk how detected this is so i commented it out but it works(just not perfect)
                                 char keys[] = { 'W', 'A', 'S', 'D' };
                                 for (char key : keys) {
-                                    keybd_event(VkKeyScan(key), 0, 0, 0);   
-                                    keybd_event(VkKeyScan(key), 0, KEYEVENTF_KEYUP, 0);  
+                                    keybd_event(VkKeyScan(key), 0, 0, 0);
+                                    keybd_event(VkKeyScan(key), 0, KEYEVENTF_KEYUP, 0);
                                 }
+                                */
                                 int random_duration1 = rand() % 30 + 10;
                                 int random_duration2 = rand() % 40 + 10;
 
