@@ -45,9 +45,3 @@ I cant guarentee that i will update this for every CS2 update so you can update 
 ## Contributing
 
 Contributions are always welcome via a pull request!
-
-
-## License
-
-[MIT](https://choosealicense.com/licenses/mit/)
-
