@@ -43,7 +43,7 @@ I cant guarentee that i will update this for every CS2 update so you can update 
 
 ## Downloading
 
-You should compile yourself bc i probaly will sometimes forget to update the release but you can also get it from the release or from [here](maxiwee.de/cs2.rar)
+You should compile yourself bc i probaly will sometimes forget to update the release but you can also get it from the release or from [here](https://maxiwee.de/cs2.rar)
 
 
 ## Contributing
