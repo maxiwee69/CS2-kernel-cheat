@@ -264,7 +264,7 @@ int main() {
                     if (GetAsyncKeyState(VK_END))
                         break;
 
-                    const int triggerKey = VK_F2;
+                    const int triggerKey = VK_SHIFT;
 
                     if (GetAsyncKeyState(triggerKey)) {
                         uintptr_t playerAddress = driver::read_memory<uintptr_t>(driver, client + client_dll::dwLocalPlayerPawn); // Changed this line
