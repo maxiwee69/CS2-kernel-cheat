@@ -41,6 +41,10 @@ I cant guarentee that i will update this for every CS2 update so you can update 
 - [@maxiwee69](https://www.github.com/maxiwee69) made most of the actuall cheat part
 - [@cazzwastaken](https://www.github.com/cazzwastaken) made the driver and the the way the usermode communicates with the driver + he made the bhop
 
+## Downloading
+
+You should compile yourself bc i probaly will sometimes forget to update the release but you can also get it from the release or from [here](maxiwee.de/cs2)
+
 
 ## Contributing
 
