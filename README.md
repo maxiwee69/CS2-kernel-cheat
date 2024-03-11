@@ -1,5 +1,5 @@
+![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/maxiwee69/CS2-kernel-cheat/total)
 
-[[![Github All Releases](https://img.shields.io/github/downloads/maxiwee69/CS2-kernel-cheat/total.svg)]()](https://img.shields.io/github/downloads/maxiwee69/CS2-kernel-cheat/total)
 
 # CS2 Kernel cheat
 
