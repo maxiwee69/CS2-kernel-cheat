@@ -70,7 +70,7 @@ void handle_triggerbot(HANDLE driver, std::uintptr_t client) {
     while (true) {
         if (GetAsyncKeyState(VK_END))
             break;
-        const int triggerKey = VK_SHIFT;
+        const int triggerKey = VK_RBUTTON;
         if (GetAsyncKeyState(triggerKey)) {
             uintptr_t playerAddress = driver::read_memory<uintptr_t>(driver, client + client_dll::dwLocalPlayerPawn); // Changed this line
             uintptr_t entity_list = driver::read_memory<uintptr_t>(driver, client + client_dll::dwEntityList);
