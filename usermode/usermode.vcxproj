@@ -143,7 +143,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\audio.cpp" />
+    <ClCompile Include="src\featues.cpp" />
     <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\memory.cpp" />
     <ClCompile Include="src\sounds.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -151,9 +154,12 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\audio.h" />
+    <ClInclude Include="src\audio.hpp" />
     <ClInclude Include="src\client.dll.hpp" />
+    <ClInclude Include="src\features.hpp" />
+    <ClInclude Include="src\memory.hpp" />
     <ClInclude Include="src\offsets.hpp" />
-    <ClInclude Include="src\sounds.h" />
+    <ClInclude Include="src\sounds.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
