@@ -2,22 +2,19 @@
 
 A simple CS2 cheat in using a kernel driver
 
-## Demo 
-
-### Hitsounds 
-
-[![Watch the video](https://raw.githubusercontent.com/maxiwee69/CS2-kernel-cheat/master/hitsounds.mp4)](https://github.com/maxiwee69/CS2-kernel-cheat/blob/master/hitsounds.mp4)
-
-### Triggerbot 
-
-[![Watch the video](https://raw.githubusercontent.com/maxiwee69/CS2-kernel-cheat/master/triggerbot.mp4)](https://github.com/maxiwee69/CS2-kernel-cheat/blob/master/triggerbot.mp4)
-
-### Bhop 
-
-[![Watch the video](https://raw.githubusercontent.com/maxiwee69/CS2-kernel-cheat/master/bhop.mp4)](https://github.com/maxiwee69/CS2-kernel-cheat/blob/master/bhop.mp4)
-
-
 ## Features
+
+https://github.com/maxiwee69/CS2-kernel-cheat/assets/81492222/f6e0497c-d15d-4cf3-8145-43ccf9810197
+
+
+
+https://github.com/maxiwee69/CS2-kernel-cheat/assets/81492222/cd7ad471-230f-441e-b00b-dc5974055bcd
+
+
+
+https://github.com/maxiwee69/CS2-kernel-cheat/assets/81492222/f2860383-047d-4a3c-8514-9ad7a17dd6a8
+
+
 
 - Simple triggerbot with autostop(you need to uncomment it at line 285 in the usermode/src/features.cpp) to change the triggerkey go to line 74 and use anything from [here](https://learn.microsoft.com/de-de/windows/win32/inputdev/virtual-key-codes)
 - Simple bhop 
