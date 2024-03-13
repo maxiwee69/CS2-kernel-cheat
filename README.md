@@ -38,7 +38,7 @@ Windows Defender probaly needs to be off but you can just whitelist the diretory
 Disable vulnerable driver list if enabled [Guide for that](https://support.microsoft.com/en-au/topic/kb5020779-the-vulnerable-driver-blocklist-after-the-october-2022-preview-release-3fcbe13a-6013-4118-b584-fcfbc6a09936)
 ## Note
 
-I know this is horrible code and also horribly formatted because most is done in 1 file i am sorry for that.
+I know this is horrible code and also horribly formatted but deal with it, its enough for me to work on it, if you dont understand what i did at acertain places ask me or ask copilot
 
 ## Future plans
 - Currently the bhop isnt the best as it sometimes just fails to jump so i will improve that.
