@@ -1,6 +1,3 @@
-![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/maxiwee69/CS2-kernel-cheat/total)
-
-
 # CS2 Kernel cheat
 
 A simple CS2 cheat in using a kernel driver
