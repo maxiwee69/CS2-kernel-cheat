@@ -4,6 +4,7 @@
 #include <thread>
 #include <random>
 #include <iostream>
+#include <glm/glm.hpp>
 #include "audio.hpp"
 #include "memory.hpp"
 #include "client.dll.hpp"
@@ -98,3 +99,4 @@ void handle_triggerbot(HANDLE driver, std::uintptr_t client) {
         }
     }
 }
+
