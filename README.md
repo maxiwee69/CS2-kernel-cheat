@@ -2,8 +2,19 @@
 
 A simple CS2 cheat in using a kernel driver
 
-
 ## Features
+
+https://github.com/maxiwee69/CS2-kernel-cheat/assets/81492222/f6e0497c-d15d-4cf3-8145-43ccf9810197
+
+
+
+https://github.com/maxiwee69/CS2-kernel-cheat/assets/81492222/cd7ad471-230f-441e-b00b-dc5974055bcd
+
+
+
+https://github.com/maxiwee69/CS2-kernel-cheat/assets/81492222/f2860383-047d-4a3c-8514-9ad7a17dd6a8
+
+
 
 - Simple triggerbot with autostop(you need to uncomment it at line 285 in the usermode/src/features.cpp) to change the triggerkey go to line 74 and use anything from [here](https://learn.microsoft.com/de-de/windows/win32/inputdev/virtual-key-codes)
 - Simple bhop 
@@ -27,7 +38,7 @@ Windows Defender probaly needs to be off but you can just whitelist the diretory
 Disable vulnerable driver list if enabled [Guide for that](https://support.microsoft.com/en-au/topic/kb5020779-the-vulnerable-driver-blocklist-after-the-october-2022-preview-release-3fcbe13a-6013-4118-b584-fcfbc6a09936)
 ## Note
 
-I know this is horrible code and also horribly formatted because most is done in 1 file i am sorry for that.
+I know this is horrible code and also horribly formatted but deal with it, its enough for me to work on it, if you dont understand what i did at acertain places ask me or ask copilot
 
 ## Future plans
 - Currently the bhop isnt the best as it sometimes just fails to jump so i will improve that.
