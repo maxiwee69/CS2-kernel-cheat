@@ -68,12 +68,16 @@ void handle_hitsound(HANDLE driver, std::uintptr_t client, std::atomic<int>& pre
 }
 
 void handle_triggerbot(HANDLE driver, std::uintptr_t client) {
+    bool triggerEnabled = false;
     while (true) {
         if (GetAsyncKeyState(VK_END))
             break;
-        const int triggerKey = VK_RBUTTON;
-        if (GetAsyncKeyState(triggerKey)) {
-            uintptr_t playerAddress = driver::read_memory<uintptr_t>(driver, client + client_dll::dwLocalPlayerPawn); // Changed this line
+        const int triggerKey = 0x54; // 'T' key
+        if (GetAsyncKeyState(triggerKey) & 1) {
+            triggerEnabled = !triggerEnabled;
+        }
+        if (triggerEnabled) {
+            uintptr_t playerAddress = driver::read_memory<uintptr_t>(driver, client + client_dll::dwLocalPlayerPawn);
             uintptr_t entity_list = driver::read_memory<uintptr_t>(driver, client + client_dll::dwEntityList);
             uintptr_t local_player = driver::read_memory<uintptr_t>(driver, client + client_dll::dwLocalPlayerPawn);
             int local_team = driver::read_memory<int>(driver, local_player + C_BaseEntity::m_iTeamNum);
@@ -89,7 +93,6 @@ void handle_triggerbot(HANDLE driver, std::uintptr_t client) {
                 if (health > 0 && team != local_team) {
                     int random_duration1 = rand() % 30 + 10;
                     int random_duration2 = rand() % 40 + 10;
-                    std::this_thread::sleep_for(std::chrono::milliseconds(random_duration));
                     std::this_thread::sleep_for(std::chrono::milliseconds(random_duration1));
                     mouse_event(MOUSEEVENTF_LEFTDOWN, 0, 0, 0, 0);
                     std::this_thread::sleep_for(std::chrono::milliseconds(random_duration2));
@@ -99,4 +102,3 @@ void handle_triggerbot(HANDLE driver, std::uintptr_t client) {
         }
     }
 }
-
