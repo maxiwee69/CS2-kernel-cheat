@@ -8,7 +8,7 @@ A simple CS2 cheat in using a kernel driver
 
 ## Features
 
-- Simple triggerbot with autostop(you need to uncomment it at line 285 in the usermode/src/main.cpp) to change the triggerkey go to line 267 and use anything from [here](https://learn.microsoft.com/de-de/windows/win32/inputdev/virtual-key-codes)
+- Simple triggerbot with autostop(you need to uncomment it at line 285 in the usermode/src/features.cpp) to change the triggerkey go to line 74 and use anything from [here](https://learn.microsoft.com/de-de/windows/win32/inputdev/virtual-key-codes)
 - Simple bhop 
 - Hitsounds
 - Kernelmode to be undetectable by vac(or at least in theory)
@@ -45,7 +45,7 @@ I cant guarentee that i will update this for every CS2 update so you can update 
 
 ## Downloading
 
-You should compile yourself bc i probaly will sometimes forget to update the release but you can also get it from the release or from [here](https://maxiwee.de/cs2.rar)
+You should compile yourself bc i probaly will sometimes forget to upload it but you can get it from [here]()
 
 
 ## Contributing
