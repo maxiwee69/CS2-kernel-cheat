@@ -2,6 +2,20 @@
 
 A simple CS2 cheat in using a kernel driver
 
+## Demo 
+
+### Hitsounds 
+
+[![Watch the video](https://raw.githubusercontent.com/maxiwee69/CS2-kernel-cheat/master/hitsounds.mp4)](https://github.com/maxiwee69/CS2-kernel-cheat/blob/master/hitsounds.mp4)
+
+### Triggerbot 
+
+[![Watch the video](https://raw.githubusercontent.com/maxiwee69/CS2-kernel-cheat/master/triggerbot.mp4)](https://github.com/maxiwee69/CS2-kernel-cheat/blob/master/triggerbot.mp4)
+
+### Bhop 
+
+[![Watch the video](https://raw.githubusercontent.com/maxiwee69/CS2-kernel-cheat/master/bhop.mp4)](https://github.com/maxiwee69/CS2-kernel-cheat/blob/master/bhop.mp4)
+
 
 ## Features
 
