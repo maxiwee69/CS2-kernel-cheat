@@ -69,6 +69,8 @@ void handle_hitsound(HANDLE driver, std::uintptr_t client, std::atomic<int>& pre
 
 void handle_triggerbot(HANDLE driver, std::uintptr_t client) {
     bool triggerEnabled = false;
+    std::uniform_int_distribution<> distr1(10, 40);
+    std::uniform_int_distribution<> distr2(10, 50);
     while (true) {
         if (GetAsyncKeyState(VK_END))
             break;
@@ -91,8 +93,8 @@ void handle_triggerbot(HANDLE driver, std::uintptr_t client) {
                 int health = driver::read_memory<int>(driver, entity + C_BaseEntity::m_iHealth);
 
                 if (health > 0 && team != local_team) {
-                    int random_duration1 = rand() % 30 + 10;
-                    int random_duration2 = rand() % 40 + 10;
+                    int random_duration1 = distr1(gen);
+                    int random_duration2 = distr2(gen);
                     std::this_thread::sleep_for(std::chrono::milliseconds(random_duration1));
                     mouse_event(MOUSEEVENTF_LEFTDOWN, 0, 0, 0, 0);
                     std::this_thread::sleep_for(std::chrono::milliseconds(random_duration2));
