@@ -73,12 +73,12 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <OutDir>$(SolutionDir)build\</OutDir>
     <IntDir>$(SolutionDir)build\um_intermediate\</IntDir>
-    <IncludePath>C:\Users\maxi\fullscreen\SFML-2.6.1\include;C:\Users\maxi\imgui\backends;C:\Users\maxi\imgui;C:\Users\maxi\Documents\include;$(IncludePath)</IncludePath>
+    <IncludePath>C:\Users\maxi\Documents\include\libsodium\include;C:\Users\maxi\fullscreen\SFML-2.6.1\include;C:\Users\maxi\imgui\backends;C:\Users\maxi\imgui;C:\Users\maxi\Documents\include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <OutDir>$(SolutionDir)build\</OutDir>
     <IntDir>$(SolutionDir)build\um_intermediate\</IntDir>
-    <IncludePath>C:\Users\maxi\fullscreen\SFML-2.6.1\include;C:\Users\maxi\imgui\backends;C:\Users\maxi\imgui;C:\Users\maxi\Documents\include;$(IncludePath)</IncludePath>
+    <IncludePath>C:\Users\maxi\Documents\include\libsodium\include;C:\Users\maxi\fullscreen\SFML-2.6.1\include;C:\Users\maxi\imgui\backends;C:\Users\maxi\imgui;C:\Users\maxi\Documents\include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -121,7 +121,7 @@
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
-      <AdditionalDependencies>C:\Users\maxi\Documents\SFML-2.6.1\lib\*.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>C:\Users\maxi\Documents\SFML-2.6.1\lib\*.lib;C:\Users\maxi\Documents\include\libsodium\x64\Release\v143\dynamic\libsodium.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -141,7 +141,7 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
-      <AdditionalDependencies>C:\Users\maxi\Documents\SFML-2.6.1\lib\*.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>C:\Users\maxi\Documents\SFML-2.6.1\lib\*.lib;C:\Users\maxi\Documents\include\libsodium\x64\Release\v143\dynamic\libsodium.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>

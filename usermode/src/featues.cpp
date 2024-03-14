@@ -2,7 +2,6 @@
 #include <atomic>
 #include <future>
 #include <thread>
-#include <random>
 #include <iostream>
 #include <glm/glm.hpp>
 #include "audio.hpp"
@@ -10,12 +9,13 @@
 #include "client.dll.hpp"
 #include "offsets.hpp"
 #include "sounds.hpp"
+#include <sodium.h>
 
-
-std::random_device rd;
-std::mt19937 gen(rd());
-std::uniform_int_distribution<> distr(0, 200);
-int random_duration = distr(gen);
+void f() {
+    uint32_t random_duration;
+    randombytes_buf(&random_duration, sizeof(random_duration));
+    random_duration %= 201; // to get a number in the range [0, 200]
+}
 
 void handle_bhop(HANDLE driver, std::uintptr_t client) {
     while (true) {
@@ -69,8 +69,6 @@ void handle_hitsound(HANDLE driver, std::uintptr_t client, std::atomic<int>& pre
 
 void handle_triggerbot(HANDLE driver, std::uintptr_t client) {
     bool triggerEnabled = false;
-    std::uniform_int_distribution<> distr1(10, 40);
-    std::uniform_int_distribution<> distr2(10, 50);
     while (true) {
         if (GetAsyncKeyState(VK_END))
             break;
@@ -93,8 +91,12 @@ void handle_triggerbot(HANDLE driver, std::uintptr_t client) {
                 int health = driver::read_memory<int>(driver, entity + C_BaseEntity::m_iHealth);
 
                 if (health > 0 && team != local_team) {
-                    int random_duration1 = distr1(gen);
-                    int random_duration2 = distr2(gen);
+                    uint32_t random_duration1;
+                    uint32_t random_duration2;
+                    randombytes_buf(&random_duration1, sizeof(random_duration1));
+                    randombytes_buf(&random_duration2, sizeof(random_duration2));
+                    random_duration1 = 10 + random_duration1 % 31; // to get a number in the range [10, 40]
+                    random_duration2 = 10 + random_duration2 % 41; // to get a number in the range [10, 50]
                     std::this_thread::sleep_for(std::chrono::milliseconds(random_duration1));
                     mouse_event(MOUSEEVENTF_LEFTDOWN, 0, 0, 0, 0);
                     std::this_thread::sleep_for(std::chrono::milliseconds(random_duration2));

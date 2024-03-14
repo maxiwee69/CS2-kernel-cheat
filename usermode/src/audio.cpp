@@ -1,7 +1,7 @@
+#include <sodium.h>
 #include "audio.hpp"
 #include "sounds.hpp"
 #include <iostream>
-#include <random>
 #include <SFML/Audio.hpp>
 
 sf::Sound sound;
@@ -9,11 +9,11 @@ sf::Sound sound;
 std::vector<sf::Int16>& getRandomSoundFile() {
     std::vector<std::vector<sf::Int16>*> sound_files = { &audioData1, &audioData2, &audioData4, &audioData5 };
 
-    std::random_device rd;
-    std::mt19937 gen(rd());
-    std::uniform_int_distribution<> distr(0, sound_files.size() - 1);
+    uint32_t index;
+    randombytes_buf(&index, sizeof(index));
+    index %= sound_files.size(); // to get a number in the range [0, sound_files.size() - 1]
 
-    return *sound_files[distr(gen)];
+    return *sound_files[index];
 }
 
 void playSound(const std::vector<sf::Int16>& soundData) {
