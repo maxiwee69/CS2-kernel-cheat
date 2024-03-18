@@ -26,7 +26,7 @@ https://github.com/maxiwee69/CS2-kernel-cheat/assets/81492222/f2860383-047d-4a3c
 
 Open it in visual studio and build as debug or as release whatever you like obv in x64
 
-You will also need the [KDmapper](https://www.sfml-dev.org/download/sfml/2.6.1/) and [libsodium](https://download.libsodium.org/libsodium/releases/) for this to compile and run
+You will also need the [SFML](https://www.sfml-dev.org/download/sfml/2.6.1/) and [libsodium](https://download.libsodium.org/libsodium/releases/) for this to compile and run
 ## How to use it
 
 You need to map the driver using soemthing like [KDmapper](https://github.com/TheCruZ/kdmapper) 
