@@ -16,10 +16,11 @@ https://github.com/maxiwee69/CS2-kernel-cheat/assets/81492222/f2860383-047d-4a3c
 
 
 
-- Simple triggerbot to change the triggerkey go to line 74 and use anything from [here](https://learn.microsoft.com/de-de/windows/win32/inputdev/virtual-key-codes)
+- Simple triggerbot to change the triggerkey open the features.cpp and use anything from [here](https://learn.microsoft.com/de-de/windows/win32/inputdev/virtual-key-codes)
 - Simple bhop 
 - Hitsounds
 - Kernelmode to be undetectable by vac(or at least in theory)
+- Every feature has its own triggerkey, Triggerbot F2, Bhop F4 and Hitsounds F6
 
 
 ## Compiling
