@@ -16,7 +16,7 @@ https://github.com/maxiwee69/CS2-kernel-cheat/assets/81492222/f2860383-047d-4a3c
 
 
 
-- Simple triggerbot with autostop(you need to uncomment it at line 285 in the usermode/src/features.cpp) to change the triggerkey go to line 74 and use anything from [here](https://learn.microsoft.com/de-de/windows/win32/inputdev/virtual-key-codes)
+- Simple triggerbot to change the triggerkey go to line 74 and use anything from [here](https://learn.microsoft.com/de-de/windows/win32/inputdev/virtual-key-codes)
 - Simple bhop 
 - Hitsounds
 - Kernelmode to be undetectable by vac(or at least in theory)
@@ -26,7 +26,7 @@ https://github.com/maxiwee69/CS2-kernel-cheat/assets/81492222/f2860383-047d-4a3c
 
 Open it in visual studio and build as debug or as release whatever you like obv in x64
 
-You will also need the [SFML](https://www.sfml-dev.org/download/sfml/2.6.1/) and [libsodium](https://download.libsodium.org/libsodium/releases/) for this to compile and run
+You will also need [SFML](https://www.sfml-dev.org/download/sfml/2.6.1/) and [libsodium](https://download.libsodium.org/libsodium/releases/) for this to compile and run
 ## How to use it
 
 You need to map the driver using soemthing like [KDmapper](https://github.com/TheCruZ/kdmapper) 
