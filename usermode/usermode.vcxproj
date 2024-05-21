@@ -80,7 +80,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <OutDir>$(SolutionDir)build\</OutDir>
     <IntDir>$(SolutionDir)build\um_intermediate\</IntDir>
-    <IncludePath>C:\Users\maxi\Documents\include\libsodium\include;C:\Users\maxi\fullscreen\SFML-2.6.1\include;C:\Users\maxi\imgui\backends;C:\Users\maxi\imgui;C:\Users\maxi\Documents\include;$(IncludePath)</IncludePath>
+    <IncludePath>C:\Users\maxi\Documents\include\libsodium\include;C:\Users\maxi\fullscreen\SFML-2.6.1\include;C:\Users\maxi\imgui\backends;C:\Users\maxi\imgui;C:\Users\maxi\Documents\include;C:\Users\maxi\Documents\SFML-2.6.1\include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
