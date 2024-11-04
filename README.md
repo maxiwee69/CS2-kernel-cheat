@@ -54,7 +54,7 @@ I cant guarentee that i will update this for every CS2 update so you can update 
 
 ## Downloading
 
-You should compile yourself bc i probaly will sometimes forget to upload it but you can get it from [here](https://www.unknowncheats.me/forum/counter-strike-2-a/627119-cs2-kernel-cheat.html#post4018223)
+You should compile yourself bc i probaly will sometimes forget to upload it but you can get it from [here](https://www.unknowncheats.me/forum/counter-strike-2-a/627119-cs2-kernel-cheat.html)
 
 
 ## Contributing
